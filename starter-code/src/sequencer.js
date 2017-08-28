@@ -70,7 +70,7 @@
 //
 
 class LetterSequence {
-  createSequence(sequence) => {
+  createSequence(sequence) {
     const characters      = sequence.split("");
     const containerString = "";
     const repeatCount     = 1;
@@ -94,7 +94,7 @@ class LetterSequence {
     return containerString
   }
 
-  decodeSequence(sequence) => {
+  decodeSequence(sequence) {
     const containerString = "";
     const characters      = sequence.split("");
 
@@ -117,7 +117,7 @@ class LetterSequence {
     return containerString;
   }
 
-  _repeat(count, character) => {
+  _repeat(count, character){
     let characters = "";
 
     if (count <= 1){
@@ -129,9 +129,6 @@ class LetterSequence {
     }
 
     return characters;
-  }
-
-  module.exports = LetterSequence;
   }
 }
 
